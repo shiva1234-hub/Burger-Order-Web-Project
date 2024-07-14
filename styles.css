@@ -1,0 +1,140 @@
+
+body {
+  box-sizing: border-box;
+  display: grid;
+  place-items: center;
+  width: 99%;
+  height: 100%;
+  overflow: hidden;
+}
+
+#root {
+  background-color: hsl(212, 52%, 65%);
+  width: 95vw;
+  height: 91vh;
+  border-radius: 30px;
+  padding: 1em;
+}
+#myform {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+ 
+}
+#bigwrap {
+  height: 55vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#bill {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+#names {
+  text-align: right;
+}
+#buttonspace {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  height: 10vh;
+}
+#action {
+  font-size: xx-large;
+  height: 20vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#smallwrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.1em;
+  margin-bottom: 0.1em;
+}
+
+#smallwrap > *,
+#bigwrap > :not(#smallwrap) {
+  padding: 0.5em;
+  width: 31vw;
+  height: 3vw;
+  text-align: center;
+  border-radius: 100px;
+}
+
+#smallwrap .bun,
+#bigwrap > #bottombun {
+  background-color: chocolate;
+  border-radius: 100px;
+  text-align: center;
+  width: 32vw;
+  height: 4vw;
+}
+
+#smallwrap .bun {
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+
+#bigwrap #bottombun {
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+#smallwrap .cheese {
+  background-color: hsl(33, 100%, 50%);
+  width: 31.5vw;
+  height: 1vw;
+}
+#smallwrap .burst {
+  background-color: hsl(33, 100%, 50%);
+  width: 32vw;
+  height: 2.5vw;
+}
+
+#smallwrap .tikki {
+  background-color: hsl(0, 59%, 65%);
+  height: 2vw;
+}
+
+#smallwrap .sauce {
+  height: 1.5vw;
+  background-color: hsl(0, 90%, 65%);
+}
+
+#smallwrap .stuffing {
+  height: 1vw;
+  background-color: rgb(26, 156, 26);
+}
+
+.optionbox {
+  background-color: wheat;
+  padding: 1em;
+  border-radius: 100px;
+  font-size: x-large;
+}
+
+.optionbox > input[type="radio"]:checked {
+  font-weight: bold;
+}
+
+.optionbox > input[type="radio"] {
+  display: none;
+  pointer-events: none;
+}
+button {
+  background-color: rgb(162, 230, 124);
+  border-radius: 20px;
+  padding: 0 1em;
+  margin: 0;
+}
+button h1 {
+  margin: 0.3em;
+}
